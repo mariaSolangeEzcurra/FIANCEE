@@ -1,0 +1,1 @@
+export default function Drawer({open,title,children,onClose}){if(!open)return null;return <div className="modal-backdrop" onMouseDown={e=>e.target===e.currentTarget&&onClose?.()}><aside className="drawer-panel"><header><h2>{title}</h2><button className="icon-button" onClick={onClose}>×</button></header>{children}</aside></div>}

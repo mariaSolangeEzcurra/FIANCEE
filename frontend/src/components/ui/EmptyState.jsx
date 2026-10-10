@@ -1,0 +1,1 @@
+export default function EmptyState({title='Todavía no hay información',description='Cuando existan registros, aparecerán aquí.',action}){return <div className="empty-state"><span className="empty-symbol">◇</span><h3>{title}</h3><p>{description}</p>{action}</div>}
